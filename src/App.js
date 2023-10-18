@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header/Header';
+import Home from './pages/home/Home';
+import Services from './pages/services/Services';
+import About from './pages/about/About';
+import Contact from './pages/contact/Contact';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Home/>
+      <Services/>
+      <About/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }
 
 export default App;
+//#026085 :color

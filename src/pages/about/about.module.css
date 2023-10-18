@@ -1,0 +1,27 @@
+.container {
+    flex-direction: column;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 60px;
+}
+.name{
+    color: green;
+}
+.container p{
+    font-size: large;
+    text-align: center;
+}
+
+@media screen and (max-width:786px) {
+    .container{
+        height: fit-content;
+    }
+    .container h2{
+        text-align: center;
+    }
+    .container p{
+        text-align: left;
+    }
+}

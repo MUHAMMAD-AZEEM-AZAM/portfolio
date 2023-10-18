@@ -1,0 +1,24 @@
+.container {
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .iconDiv{
+    display: flex;
+    gap: 20px;
+  }
+  span{
+    color: green;
+    font-weight: bold;
+  }
+  .container p{
+    text-align: center;
+  }
+  @media screen and (max-width:786px) {
+    .container{
+        height: 300px;
+    }
+    
+}

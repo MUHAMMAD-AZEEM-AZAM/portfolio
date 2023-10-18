@@ -1,0 +1,100 @@
+.head {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.name {
+  color: green;
+}
+
+.navBar {
+  width: 50%;
+  max-width: 500px;
+  display: block;
+}
+
+.navBar ul {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.navBar li {
+  list-style: none;
+  position: relative;
+}
+
+.navBar li a {
+  text-decoration: none;
+  color: green;
+  cursor: pointer;
+}
+
+.navBar li a:hover {
+  text-decoration-color: green;
+}
+
+.navBar ul li::after {
+  content: '';
+  height: 1px;
+  width: 0;
+  background-color: green;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+
+.navBar ul li:hover:after {
+  width: 100%;
+}
+
+.menu {
+  display: none;
+}
+
+/* code for mobile view */
+
+@media screen and (max-width:786px) {
+  .menu {
+    display: block;
+    color: white;
+  }
+  .bgColor{
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: none;
+  }
+  .name{
+    color: white;
+  }
+.head{
+  background-color: green;
+  color: white;
+  flex-direction: column;
+  justify-content: left;
+  width: 90%;
+  padding: 0;
+}
+.navBar{
+  width: 100%;
+  display: none;
+}
+ .navBar ul {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .navBar ul li a{
+    color: white;
+  }
+
+
+}
