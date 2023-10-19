@@ -1,9 +1,5 @@
 import React from 'react';
 import styles from './card.module.css';
-import {Route } from 'react-router-dom';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
-const primaryColor='yellowgreen'
 const Card = (props) => {
       return (
         <div className={styles.outer}>
