@@ -3,8 +3,11 @@ import styles from './home.module.css'
 import { web,mobile,uiux} from '../../assets'
 import Typed from 'typed.js'
 import resume from '../../assets/resume.pdf'
+import AOS from 'aos';
+
 
 function Home() {
+  AOS.init();
 var skills=['Web Developer', 'UI UX designer','Mobile App Developer']
 // functonality for typed---------
   const el = React.useRef(null);
@@ -36,15 +39,17 @@ useEffect(()=>{
 return (
     <div className={styles.container}id='home' >
 
-        <div className={styles.box1}>
+        <div className={styles.box1} data-aos="fade-up"
+     data-aos-duration="3000">
             <h3>I am</h3>
             <h2 className='scale'>Muhammad Azeem</h2>
             <h3>I am a professional</h3>
             <div className={styles.type} ><h3 ref={el}></h3></div>
             <a href={resume} download='resume.pdf'><button className=''>Download Resume</button></a> 
         </div>
-        <div className={styles.box2}>
-            <img className={styles.image} src={images[currentImageIndex]} alt='services'/>
+        <div className={styles.box2} >
+          
+            <img className={styles.image} src={images[currentImageIndex]} alt='services' data-aos="fade-left" data-aos-duration="2000"/>
         </div>
     </div>
   )

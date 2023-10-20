@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import styles from './header.module.css'
 import { AiOutlineMenu } from "react-icons/ai";
-
 function Header() {
+
   const [display,setDisplay]=useState('none');
  const displayMenu=()=>{
   setDisplay(display==='none'?'block':'none');
@@ -12,7 +12,7 @@ menu.style.display=display
   return (
       <div className={`section ${styles.bgColor}`}>
         <header className={styles.head}>
-            <h3 className={`scale ${styles.name}`}>Muhammad Azeem</h3>
+            <h3 className={`scale ${styles.name}`} data-aos="fade-right" data-aos-duration="1000">Muhammad Azeem</h3>
             <nav className={styles.navBar} id='nav'>
                 <ul>
                     <li className='scale'><a href="#home">Home</a></li>
