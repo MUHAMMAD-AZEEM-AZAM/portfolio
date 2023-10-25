@@ -7,7 +7,15 @@
   }
   .iconDiv{
     display: flex;
-    gap: 20px;
+    gap: 40px;
+  }
+  .icon{
+    height: 25px;
+    width: 25px;
+    transition: Transform 0.25s;
+  }
+  .icon:hover{
+    transform: scale(1.2);
   }
   span{
     color: green;

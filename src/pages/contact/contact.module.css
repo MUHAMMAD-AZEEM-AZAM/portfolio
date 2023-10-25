@@ -2,7 +2,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 600px;
     gap: 40px;
 }
 
@@ -33,7 +33,7 @@
     justify-content: center;
 }
 
-.box2 input {
+.input {
     width: 80%;
     height: 40px;
     padding: 10px;
@@ -41,11 +41,16 @@
     border: 0.5px solid rgb(148, 148, 148);
 }
 
-.box2 input:focus {
-    /* box-shadow: 0 0 5px green;
-    transition: border-color .15s;
-    transition:box-shadow ease-in-out .15s;
-    border: 1px solid green; */
+.input:focus {
+    box-shadow: -1px 1px 3px 0px rgba(102,194,0,1),
+    0px 1px 1px 0px rgba(104, 104, 104, 0.11);
+    border: none;
+    outline: none;
+}.box2 textarea:focus {
+    box-shadow: -1px 1px 3px 0px rgba(102,194,0,1),
+    0px 1px 1px 0px rgba(104, 104, 104, 0.11);
+    border: none;
+    outline: none;
 }
 
 .box2 textarea {
@@ -55,15 +60,16 @@
     border: 0.5px solid rgb(114, 114, 114);
 }
 
-.box2 button {
+.submit {
     padding: 10px;
+    width: 35%;
     border-radius: 20px;
     background-color: white;
     color: green;
     border: 1px solid green;
 }
 
-.box2 button:hover {
+.submit:hover {
     background-color: green;
     color: white;
     transition: 0.5s;

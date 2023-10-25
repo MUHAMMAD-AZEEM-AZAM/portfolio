@@ -5,6 +5,7 @@ import Services from './pages/services/Services';
 import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 import Footer from './components/footer/Footer';
+// import { ContactUs } from './pages/contact/ContactForm';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About/>
       <Contact/>
       <Footer/>
+      {/* <ContactUs/> */}
     </div>
   );
 }
