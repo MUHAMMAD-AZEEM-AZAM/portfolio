@@ -14,6 +14,7 @@ const Footer = () => {
           <BsGithub className={styles.icon} color='green' />
         </a>
       </div>
+      <p>Connect with me for more Information</p>
       {/* <p>Copyright © 2023 <span>Azeem</span>. All Rights Reserved.</p> */}
     </div>
   )

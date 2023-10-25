@@ -97,7 +97,7 @@
   }
   .navBar ul li a{
     color: green;
-    font-size: large;
+    font-size:large;
   }
   .navBar ul li::after {
 background-color: green;
